@@ -1,0 +1,32 @@
+﻿@WeatherForecast.Api_HostAddress = http://localhost:32774
+
+GET {{WeatherForecast.Api_HostAddress}}/api/geolocation
+
+###
+
+POST {{WeatherForecast.Api_HostAddress}}/api/geolocation
+Content-Type: application/json
+
+{
+    "latitude":50.89,
+    "longitude":16.74
+}
+
+###
+
+@id=2
+GET {{WeatherForecast.Api_HostAddress}}/api/geolocation/{{id}}
+
+###
+
+@latitude=50.89
+@longitude=16.74
+DELETE {{WeatherForecast.Api_HostAddress}}/api/geolocation/{{latitude}}/{{longitude}}
+
+###
+
+@latitude=50.9
+@longitude=16.74
+GET {{WeatherForecast.Api_HostAddress}}/api/geolocation/{{latitude}}/{{longitude}}/weatherforecast
+
+###
