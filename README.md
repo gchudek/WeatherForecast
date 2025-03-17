@@ -9,6 +9,7 @@ Precision of coordinates has been set up to 2 digits (limitation of 3rd party AP
 ## Endpoints
 
 The documentation is available on Swagger UI - link: `http://localhost:5000/swagger/index.html`
+Please note that it requires application run in development mode.
 
 ## Starting the project
 
@@ -20,3 +21,7 @@ The documentation is available on Swagger UI - link: `http://localhost:5000/swag
 ## Integration tests
 ### Run integration tests
     dotnet test .\WeatherForecast.IntegrationTests\WeatherForecast.IntegrationTests.csproj
+
+## Microsoft Azure
+### Web Application has been deployed on Microsoft Azure
+    https://gch-weatherforecast-ggdmc8e3avgqfeee.westeurope-01.azurewebsites.net/
